@@ -3,7 +3,8 @@ import { useState } from "react"
 function InputBox(){
     const [content, setContent] = useState('');
     const handleAlert = () =>{
-        return alert('content')
+         alert(content);
+         return setContent('');
     }
 
     function handleChange(e){
